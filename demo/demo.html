@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Angular OS Detection</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body ng-app="os.detection" >
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Angular OS Detection</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container" ng-controller="ApplicationController" ng-cloak>
+
+       <section ng-cloak>
+
+            <div class="page-header">
+
+                <h1>Angular OS Detection <small>angular-os-detection.js</small></h1>
+
+            </div>
+
+            <br><br><br>
+            <h2 class="text-center">Your operating system is</h2>
+            <h2 class="text-center"><span class="label label-primary text-capitalize" >{{systemOperation}}</span></h2>
+
+        </section>
+
+
+    </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/angular.js"></script>
+
+    <script src="js/angular-os-detection.js"></script>
+    <script src="js/application.js"></script>
+
+
+</body>
+</html>
